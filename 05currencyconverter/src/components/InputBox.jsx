@@ -11,7 +11,7 @@ const InputBox = ({
             <div className="bg-white flex justify-between p-3 rounded-lg">
                 <div className="w-1/2 overflow-hidden">
                     <label className="text-black/40 mb-2 inline-block">{label}</label>
-                    <input min={0} value={ammount} disabled={disabled} onChange={(e)=>onAmountChnage?.(Number(e.target.value))} className="w-full  outline-none py-3 bg-transparent" placeholder="Ammount" type="number" />
+                    <input min={0}  value={ammount ? ammount : ''} disabled={disabled} onChange={(e)=>onAmountChnage?.(Number(e.target.value))} className="w-full  outline-none py-3 bg-transparent" placeholder="Ammount" type="number" />
                 </div>
                 <div className="flex flex-wrap justify-end text-right">
                 <label className="text-black/40 mb-2 w-full  block">Currency Type</label>

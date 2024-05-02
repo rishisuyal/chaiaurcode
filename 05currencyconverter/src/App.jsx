@@ -10,7 +10,7 @@ function App() {
   const data = useConverter(from);
   const options = Object.keys(data);
   const convert = useCallback(()=>{
-    setResultAmmount(Math.round(data[to]*ammount*100)/100)
+    setResultAmmount(Math.round(data[to]*ammount*1000)/1000)
   },[ammount,to,from,data])
   const swap = useCallback(()=>{
     setFrom(to);
